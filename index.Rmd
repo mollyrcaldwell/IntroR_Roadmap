@@ -1,0 +1,49 @@
+--- 
+title: "Intro to R Roadmap"
+author: "Molly Caldwell"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This is an outline for using R for data analysis & visualization. It is meant to be used as a resource and supplement to intro to R coursework."
+---
+
+# Roadmap
+
+This outlines the coding skill & techniques building blocks to complete data analyses & visualization with R. Click through each section for additional information and resources.
+
+## Step 1. Getting to know R
+Learning to code is learning a new language! Before jumping straight into analyzing data, it's important to know how the R language works.
+
+## Step 2.
+
+```{r}
+library(DiagrammeR)
+library(htmlwidgets)
+
+# Create a flowchart with links to bookdown chapters using section IDs
+graph <- grViz("
+digraph flowchart {
+  node [shape = box, style = filled, fillcolor = lightblue]
+
+  # Nodes with embedded hyperlinks to bookdown chapters using section IDs
+  A [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"./index.html#introduction\" TARGET=\"_blank\">Introduction</TD></TR></TABLE>>]
+  B [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"./index.html#intro\" TARGET=\"_blank\">Chapter 1</TD></TR></TABLE>>]
+  C [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"./index.html#methods\" TARGET=\"_blank\">Chapter 2</TD></TR></TABLE>>]
+  D [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"./index.html#conclusion\" TARGET=\"_blank\">Conclusion</TD></TR></TABLE>>]
+
+  # Edges
+  A -> B
+  B -> C
+  C -> D
+}
+")
+
+
+# Display the graph
+graph
+```

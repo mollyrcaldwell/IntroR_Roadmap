@@ -25,16 +25,16 @@ Learning to code is learning a new language! Before jumping straight into analyz
 library(DiagrammeR)
 library(htmlwidgets)
 
-# Create a flowchart with links to bookdown chapters using section IDs
+# Create a flowchart with links to bookdown chapters
 graph <- grViz("
 digraph flowchart {
   node [shape = box, style = filled, fillcolor = lightblue]
 
-  # Nodes with embedded hyperlinks to bookdown chapters using section IDs
-  A [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"./index.html#introduction\" TARGET=\"_blank\">Introduction</TD></TR></TABLE>>]
-  B [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"./index.html#intro\" TARGET=\"_blank\">Chapter 1</TD></TR></TABLE>>]
-  C [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"./index.html#methods\" TARGET=\"_blank\">Chapter 2</TD></TR></TABLE>>]
-  D [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"./index.html#conclusion\" TARGET=\"_blank\">Conclusion</TD></TR></TABLE>>]
+  # Nodes with embedded hyperlinks to bookdown chapters
+  A [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"https://yourbookdownsite.com/introduction.html\" TARGET=\"_blank\">Introduction</TD></TR></TABLE>>]
+  B [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"https://yourbookdownsite.com/chapter1.html\" TARGET=\"_blank\">Chapter 1</TD></TR></TABLE>>]
+  C [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"https://yourbookdownsite.com/chapter2.html\" TARGET=\"_blank\">Chapter 2</TD></TR></TABLE>>]
+  D [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"https://yourbookdownsite.com/conclusion.html\" TARGET=\"_blank\">Conclusion</TD></TR></TABLE>>]
 
   # Edges
   A -> B
@@ -42,7 +42,6 @@ digraph flowchart {
   C -> D
 }
 ")
-
 
 # Display the graph
 graph

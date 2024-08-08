@@ -1,8 +1,6 @@
 fig:nice-fig
 tab:nice-tab
 roadmap
-step-1.-getting-to-know-r
-step-2.
 intro
 literature
 methods

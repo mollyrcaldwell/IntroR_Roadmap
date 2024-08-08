@@ -16,12 +16,7 @@ description: "This is an outline for using R for data analysis & visualization. 
 
 This outlines the coding skill & techniques building blocks to complete data analyses & visualization with R. Click through each section for additional information and resources.
 
-## Step 1. Getting to know R
-Learning to code is learning a new language! Before jumping straight into analyzing data, it's important to know how the R language works.
-
-## Step 2.
-
-```{r}
+```{r echo = FALSE}
 library(DiagrammeR)
 library(htmlwidgets)
 
@@ -31,7 +26,7 @@ digraph flowchart {
   node [shape = box, style = filled, fillcolor = lightblue]
 
   # Nodes with embedded hyperlinks to bookdown chapters
-  A [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"https://yourbookdownsite.com/introduction.html\" TARGET=\"_blank\">Introduction</TD></TR></TABLE>>]
+  A [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"https://mollyrcaldwell.github.io/IntroR_Roadmap/literature.html\" TARGET=\"_blank\">Introduction</TD></TR></TABLE>>]
   B [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"https://yourbookdownsite.com/chapter1.html\" TARGET=\"_blank\">Chapter 1</TD></TR></TABLE>>]
   C [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"https://yourbookdownsite.com/chapter2.html\" TARGET=\"_blank\">Chapter 2</TD></TR></TABLE>>]
   D [label = <<TABLE BORDER=\"0\"><TR><TD HREF=\"https://yourbookdownsite.com/conclusion.html\" TARGET=\"_blank\">Conclusion</TD></TR></TABLE>>]
